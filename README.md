@@ -3,7 +3,7 @@ Effortlessly automate the submission of Undip's free meal form using Selenium an
 
 ## Features
 - Automatically fills out and submits Undip's free meal form.
-- Bypasses CAPTCHAs with integrated reCAPTCHA solving.
+- Bypasses CAPTCHAs with integrated 2CAPTCHA solving.
 - Efficient and undetected browsing using `undetected-chromedriver`.
 
 ## Requirements
@@ -52,7 +52,7 @@ Before running the bot, ensure you have the following installed:
 - Use this bot responsibly and only for personal purposes.
 
 ## Troubleshooting
-- If the bot fails to bypass CAPTCHA, ensure the `solveRecaptcha` function is properly configured and functional.
+- If the bot fails to bypass CAPTCHA, ensure the `2Captcha` function is properly configured and functional.
 - Update Chrome and `undetected-chromedriver` if compatibility issues occur.
 
 ## Contributing
