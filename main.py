@@ -136,6 +136,7 @@ try:
     driver.execute_script("arguments[0].scrollIntoView();", element)
     element.click()
     print("Berhasil klik pilih tanggal")
+    
     # pilih elemen berdasarkan tanggal dan lokasi
     tanggal = "Kamis, 19 Desember 2024" # contoh tanggal
     lokasi = "Auditorium FPIK"          # contoh lokasi
@@ -146,7 +147,6 @@ try:
     # tunggu hingga elemen tersedia dan klik
     option = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, xpath_dynamic)))
     option.click()
-
     print("Berhasil memilih tanggal dan lokasi!")
 except Exception as e:
     print(f"Terjadi kesalahan: {e}")
