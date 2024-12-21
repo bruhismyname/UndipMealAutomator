@@ -126,6 +126,7 @@ wait_until_target_time(target_time)
 # refresh halaman web pada waktu yang diinginkan
 print("Merefresh halaman web...")
 driver.refresh()
+print("Berhasil merefresh web")
 
 try:
     # tanggal dan tempat
@@ -134,7 +135,7 @@ try:
     )
     driver.execute_script("arguments[0].scrollIntoView();", element)
     element.click()
-
+    print("Berhasil klik pilih tanggal")
     # pilih elemen berdasarkan tanggal dan lokasi
     tanggal = "Kamis, 19 Desember 2024" # contoh tanggal
     lokasi = "Auditorium FPIK"          # contoh lokasi
